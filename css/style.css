@@ -15,16 +15,25 @@ body {
     font-family:  Helvetica, sans-serif;
     color: white;
 }
-header .container {
+header {
+    position: fixed;
+    height: 68px;
+}
+header .container-header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
+.container-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 15px 0 0 10px;
+}
 header .logo {
-    color: var(--vermelho);
-    font-size: 40px;
-    margin-left: 40px;
+    margin: 20px 20px 0 40px;
+    height: 30px;
 }
 header nav a {
     color: #AAA;
@@ -34,11 +43,12 @@ header nav a:hover {
     color: #FFF;
 }
 
+
 /* Filme/serie principal */
 .filme-principal {
     font-size: 16px;
-    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url("../img/capa.jpg");
-    height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url("../img/capa2.webp");
+    height: 450px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -46,8 +56,76 @@ header nav a:hover {
     align-items: flex-start;
 }
 .filme-principal .descricao {
-    margin-bottom: 90px;
+    margin-top: 10px;
+    margin-bottom: 70px;
 }
-.titulo {
+.filme-principal .titulo {
+    margin-top: 10%;
     font-size: 40px;
+}
+.imagem-filme-principal {
+    height: 35%;
+    margin: 80px 20px 0 20px;
+}
+.botoes {
+    margin: 20px 0 0 20px;
+}
+.botao1, .botao2 {
+    border: none;
+    padding: 12px 30px 12px 30px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+.botao1 {
+    background-color: rgba(255,255,255,.99);
+    color: black;
+}
+.botao2 {
+    background-color: rgba(84,88,87,.60);
+    color: white;
+}
+.botao1:hover {
+    background-color: rgba(255,255,255,.70);
+}
+.botao2:hover {
+    background-color: rgba(84,88,87,.20);
+}
+.botao1 i, .botao2 i {
+    margin-right: 8px;
+}
+.filme-principal .container {
+    margin: 50px 0 0 20px;
+}
+.filme-principal .container p {
+    margin-top: 10%;
+    font-size: 12px;
+    margin: 20px 0 0 20px;
+    width: 55%;
+}
+.filme-principal .container {
+    width: 70%;
+}
+.filme-principal .container p {
+    text-align: justify;
+}
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+.grupo-carrosel {
+    margin-left: 35px;
+}
+.titulo-grupo {
+    margin-bottom: 15px;
+}
+.grupo-carrosel {
+    position: unset;
 }

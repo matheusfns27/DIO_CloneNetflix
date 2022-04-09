@@ -4,18 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Netflix</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Reesponsividade -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <!-- Aqui são os arquivos do OWL CSS -->
+        <link rel="stylesheet" type="text/css" href="css/owl/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="css/owl/owl.theme.default.min.css">
+
 </head>
 <body>
     <header>
-        <div class="container">
-            <h2 class="logo">NETFLIX</h2>
-            <nav class="">
+        <div class="container-header">
+            <!--<h2 class="logo">NETFLIX</h2>-->
+            <img class="logo" src="img/logo-netflix.png" />
+            <nav class="container-nav">
                 <a href="#">Inicio</a>
                 <a href="#">Séries</a>
                 <a href="#">Filmes</a>
-                <a href="#">Documentos</a>
+                <a href="#">Bombando</a>
+                <a href="#">Minha lista</a>
+            </nav>
+            <nav>
+                <button role="button" class="icones-topo">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>              
+                <button role="button" class="icones-topo">
+                    <i class="fa-thin fa-bell"></i>
+                </button>  
+                <a>
+                    <img />
+                </a>
+                <button role="button" class="icones-topo">
+                    <i class="fa-thin fa-caret-down"></i>
+                </button>  
             </nav>
         </div>        
     </header>
@@ -23,23 +48,434 @@
     <main>
         <div class="filme-principal">
             <div class="container">
-                <h3 class="titulo">VENON</h3>
-                <p class="descricao">Em busca de seu próximo furo de reportagem, o jornalista Eddie Brock consegue uma entrevista exclusiva com Cletus Kasady, um assassino no corredor da morte, que descobre o segredo de Eddie e se torna o hospedeiro de Carnificina, um simbionte aterrorizante e ameaçador. Eddie e Venom precisam superar sua relação atribulada e trabalhar em conjunto para derrotar Carnificina.</p>
+                
+                <img class="imagem-filme-principal" src="img/capa.webp" alt="">
+
+                <!--
+                    <h3 class="titulo">VENON</h3>
+                    <p class="descricao">Em busca de seu próximo furo de reportagem, o jornalista Eddie Brock consegue uma entrevista exclusiva com Cletus Kasady, um assassino no corredor da morte, que descobre o segredo de Eddie e se torna o hospedeiro de Carnificina, um simbionte aterrorizante e ameaçador. Eddie e Venom precisam superar sua relação atribulada e trabalhar em conjunto para derrotar Carnificina.</p>
+                -->
+
+                <p>Depois de tomar medidas extremas para encobrir um acidente, um policial corrupto começa a receber ameaças de uma misteriosa testemunha e as coisas saem do controle.</p>
+                
                 <div class="botoes">
-                    <button role="button" class="botao">
-                        ASSITIR AGORA
+                    <button role="button" class="botao1">
+                        <i class="fa-solid fa-play"></i>
+                        Assistir
                     </button>
-                    <button role="button" class="botao">
-                        MAIS INFORMAÇÕES
+                    <button role="button" class="botao2">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Mais informações
                     </button>
                 </div>
             </div>            
         </div>
+
+        <div class="grupo-carrosel">
+            <p class="titulo-grupo">Adicionados recentemente</p>
+            <div class="carrosel-filmes">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/mini1.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini2.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini3.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini4.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini5.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini6.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini7.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini8.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini9.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini10.webp" alt="capa" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo-carrosel">
+            <p class="titulo-grupo">Continuar assistindo como Matheus</p>
+            <div class="carrosel-filmes">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/cont1.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/cont2.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/cont3.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/cont4.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/cont5.webp" alt="capa" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo-carrosel">
+            <p class="titulo-grupo">Em alta</p>
+            <div class="carrosel-filmes">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/alta1.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta2.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta3.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta4.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta5.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta6.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta7.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta8.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta9.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta10.jpg" alt="capa" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo-carrosel">
+            <p class="titulo-grupo">Ação</p>
+            <div class="carrosel-filmes">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/acao1.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao2.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao3.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao4.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao5.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao6.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao7.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao8.webp" alt="capa" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo-carrosel">
+            <p class="titulo-grupo">Adicionados recentemente</p>
+            <div class="carrosel-filmes">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/mini1.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini2.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini3.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini4.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini5.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini6.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini7.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini8.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini9.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini10.webp" alt="capa" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo-carrosel">
+            <p class="titulo-grupo">Continuar assistindo como Matheus</p>
+            <div class="carrosel-filmes">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/cont1.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/cont2.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/cont3.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/cont4.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/cont5.webp" alt="capa" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo-carrosel">
+            <p class="titulo-grupo">Em alta</p>
+            <div class="carrosel-filmes">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/alta1.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta2.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta3.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta4.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta5.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta6.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta7.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta8.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta9.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta10.jpg" alt="capa" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo-carrosel">
+            <p class="titulo-grupo">Ação</p>
+            <div class="carrosel-filmes">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/acao1.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao2.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao3.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao4.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao5.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao6.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao7.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao8.webp" alt="capa" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo-carrosel">
+            <p class="titulo-grupo">Adicionados recentemente</p>
+            <div class="carrosel-filmes">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/mini1.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini2.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini3.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini4.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini5.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini6.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini7.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini8.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini9.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/mini10.webp" alt="capa" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo-carrosel">
+            <p class="titulo-grupo">Continuar assistindo como Matheus</p>
+            <div class="carrosel-filmes">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/cont1.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/cont2.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/cont3.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/cont4.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/cont5.webp" alt="capa" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo-carrosel">
+            <p class="titulo-grupo">Em alta</p>
+            <div class="carrosel-filmes">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/alta1.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta2.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta3.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta4.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta5.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta6.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta7.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta8.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta9.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/alta10.jpg" alt="capa" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo-carrosel">
+            <p class="titulo-grupo">Ação</p>
+            <div class="carrosel-filmes">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/acao1.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao2.jpg" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao3.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao4.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao5.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao6.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao7.webp" alt="capa" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/acao8.webp" alt="capa" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 
     </main>
 
     <footer>
 
     </footer>
+
+    <!-- SITE EXEMPLO QUE PODEMOS UTILIZAR RECURSOS DE ICONES -->
+    <script src="https://kit.fontawesome.com/9010b25339.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
 </body>
 </html>
