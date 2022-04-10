@@ -8,40 +8,75 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
-/* Base */
 body {
     background: var(--preta);
     font-family:  Helvetica, sans-serif;
     color: white;
 }
+
+
+/* CABEÇALHO */
 header {
-    position: fixed;
     height: 68px;
 }
-header .container-header {
+.container-header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
+
+.header-nav1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-left: 40px;
+    padding: 20px 0 0 0;
+}
+.logo-netflix {
+    height: 30px;
+}
 .container-nav {
     display: flex;
     flex-direction: row;
     gap: 15px;
-    margin: 15px 0 0 10px;
 }
-header .logo {
-    margin: 20px 20px 0 40px;
-    height: 30px;
-}
-header nav a {
+.container-nav a {
     color: #AAA;
     margin-right: 10px;
 }
-header nav a:hover {
+.container-nav a:hover {
     color: #FFF;
 }
+
+.header-nav2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-right: 40px;
+    padding: 20px 0 0 0;
+}
+.icones-topo {
+    background-color: rgba(0,0,0,.001);
+    border: none;
+    color: #AAA;;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+.icones-topo:hover {
+    color: white;
+}
+.logo-usuario {
+    background-image: url("../img/logo_usuario2.png");
+    height: 35px;
+    width: 35px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
 
 
 /* Filme/serie principal */
@@ -55,18 +90,29 @@ header nav a:hover {
     justify-content: center;
     align-items: flex-start;
 }
-.filme-principal .descricao {
-    margin-top: 10px;
-    margin-bottom: 70px;
-}
-.filme-principal .titulo {
-    margin-top: 10%;
-    font-size: 40px;
+.filme-principal .container {
+    margin: 50px 0 0 20px;
+    width: 70%;
 }
 .imagem-filme-principal {
     height: 35%;
     margin: 80px 20px 0 20px;
 }
+.filme-principal .container p {
+    margin-top: 10%;
+    font-size: 12px;
+    margin: 20px 0 0 20px;
+    width: 55%;
+    text-align: justify;
+}
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+
+
+/* BOTÕES DA CAPA PRINCIPAL*/
 .botoes {
     margin: 20px 0 0 20px;
 }
@@ -83,12 +129,12 @@ header nav a:hover {
     background-color: rgba(255,255,255,.99);
     color: black;
 }
+.botao1:hover {
+    background-color: rgba(255,255,255,.70);
+}
 .botao2 {
     background-color: rgba(84,88,87,.60);
     color: white;
-}
-.botao1:hover {
-    background-color: rgba(255,255,255,.70);
 }
 .botao2:hover {
     background-color: rgba(84,88,87,.20);
@@ -96,36 +142,26 @@ header nav a:hover {
 .botao1 i, .botao2 i {
     margin-right: 8px;
 }
-.filme-principal .container {
-    margin: 50px 0 0 20px;
+
+
+
+/* CARROSEL */
+.grupo-carrosel {
+    margin: 10px 0 0 35px;
+    position: unset;
 }
-.filme-principal .container p {
-    margin-top: 10%;
-    font-size: 12px;
-    margin: 20px 0 0 20px;
-    width: 55%;
+.titulo-grupo {
+    margin-bottom: 15px;
+    font-weight: bold;
 }
-.filme-principal .container {
-    width: 70%;
-}
-.filme-principal .container p {
-    text-align: justify;
+.carrosel-filmes {
+    margin-top: 5px;
 }
 .box-filme {
     height: 100%;
     width: 100%;
     display: block;
 }
-
-.carrosel-filmes {
-    margin-top: 5px;
-}
-.grupo-carrosel {
-    margin-left: 35px;
-}
-.titulo-grupo {
-    margin-bottom: 15px;
-}
-.grupo-carrosel {
-    position: unset;
+.item:hover {
+    cursor: pointer;
 }
