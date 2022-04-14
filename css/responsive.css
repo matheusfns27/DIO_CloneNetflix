@@ -34,14 +34,22 @@
     .filme-principal {
         height: 300px;
     }
+    .filme-principal .container {
+        margin-left: 15px;
+    }    
     .imagem-filme-principal {
         height: 20%;
+        margin-left: 0;
     }
     .filme-principal .container p {
         font-size: 10px;
+        margin-left: 0;
     }
     
     
+    .botoes {
+        margin: 10px 0 0 0px;
+    }
     .botao1, .botao2 {
         border: none;
         padding: 6px 15px 6px 15px;
@@ -51,33 +59,41 @@
         cursor: pointer;
         transition: .1s ease all;
     }
+
+
+    .grupo-carrosel {
+        margin: 10px 0 0 15px;
+    }
 }
 
 @media screen and (max-width: 500px) {
     header {
-        height: 150px;
+        height: 30px;
     }
-    .container-header,
-    .container-nav {
+    .container-header {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 5px;
         align-items: center;
     }
     .header-nav1 {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 5px;
         margin-left: 0px;
         padding: 5px;
+    }
+    .container-nav {
+        padding-left: 5px;
+        gap: 0px;
     }
     .container-nav a {
         font-size: 9px;
     }
     .header-nav2 {
-        gap: 5px;
+        gap: 2px;
         margin-right: 0px;
-        padding: 0;
+        padding: 5px;
     }
     .icones-topo, .logo-usuario {
         font-size: 10px;
@@ -92,9 +108,12 @@
     .filme-principal {
         height: 170px;
     }
+    .filme-principal .container {
+        margin: 50px 0 0 10px;
+    }
     .imagem-filme-principal {
         height: 15%;
-        margin-top: 125px;
+        margin: 125px 0px 0 0px
     }
     .filme-principal .container p {
         visibility: hidden;
@@ -102,6 +121,9 @@
     }
     
     
+    .botoes {
+        margin: 10px 0 0 0px;
+    }
     .botao1, .botao2 {
         border: none;
         padding: 3px 8px 3px 8px;
@@ -110,5 +132,10 @@
         font-size: 8px;
         cursor: pointer;
         transition: .1s ease all;
+    }
+
+
+    .grupo-carrosel {
+        margin: 10px 0 0 10px;
     }
 }
