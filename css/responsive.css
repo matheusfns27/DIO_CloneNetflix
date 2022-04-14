@@ -1,17 +1,114 @@
 @media screen and (max-width: 700px) {
-    header .container {
+    header {
+        height: 100px;
+    }
+    .container-header {
         display: flex;
         flex-direction: column;
     }
-    .botao {
-        margin-top: 5px;
-        width: 210px;
-        height: 50px;
+    .header-nav1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0px;
+        padding: 10px;
+    }
+    .container-nav a {
+        font-size: 12px;
+    }
+    .header-nav2 {
+        gap: 5px;
+        margin-right: 0px;
+        padding: 0;
+    }
+    .icones-topo, .logo-usuario {
+        font-size: 12px;
+        height: 20px;
+        width: 20px;
+    }
+    .logo-netflix {
+        height: 20px;
+    }
+
+
+    .filme-principal {
+        height: 300px;
+    }
+    .imagem-filme-principal {
+        height: 20%;
+    }
+    .filme-principal .container p {
+        font-size: 10px;
+    }
+    
+    
+    .botao1, .botao2 {
+        border: none;
+        padding: 6px 15px 6px 15px;
+        margin-right: 5px;
+        border-radius: 5px;
+        font-size: 10px;
+        cursor: pointer;
+        transition: .1s ease all;
     }
 }
 
-@media screen and (min-width: 1000px) {
-    .descricao {
-        width: 60%;
+@media screen and (max-width: 500px) {
+    header {
+        height: 150px;
+    }
+    .container-header,
+    .container-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+    .header-nav1 {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 0px;
+        padding: 5px;
+    }
+    .container-nav a {
+        font-size: 9px;
+    }
+    .header-nav2 {
+        gap: 5px;
+        margin-right: 0px;
+        padding: 0;
+    }
+    .icones-topo, .logo-usuario {
+        font-size: 10px;
+        height: 20px;
+        width: 20px;
+    }
+    .logo-netflix {
+        height: 15px;
+    }
+
+
+    .filme-principal {
+        height: 170px;
+    }
+    .imagem-filme-principal {
+        height: 15%;
+        margin-top: 125px;
+    }
+    .filme-principal .container p {
+        visibility: hidden;
+        display: none;
+    }
+    
+    
+    .botao1, .botao2 {
+        border: none;
+        padding: 3px 8px 3px 8px;
+        margin-right: 0;
+        border-radius: 3px;
+        font-size: 8px;
+        cursor: pointer;
+        transition: .1s ease all;
     }
 }
